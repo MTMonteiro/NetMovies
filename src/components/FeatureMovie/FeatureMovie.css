@@ -1,0 +1,123 @@
+.featured {
+    /* 100% da tela que o usuario esta acessando*/
+    height: 100vh;
+}
+
+.featured--vertical {
+    /*herdar tamanho do item anterior*/
+    width: inherit;
+    height: inherit;
+    /*gradiente de baixo pra cima, com cor apenas em 10% da imagem*/
+    background: linear-gradient(to top, #111 10%, transparent 90%)
+}
+
+.featured--horizontal {
+    /*herdar tamanho do item anterior*/
+    width: inherit;
+    height: inherit;
+    /*gradiente de baixo pra cima, com cor apenas em 10% da imagem*/
+    background: linear-gradient(to right, #111 10%, transparent 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 130px;
+    padding-top: 70px;
+}
+
+.featured--name {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.featured--info{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:15px;
+}
+
+.featured--points,
+.featured--seasons,
+.featured--year {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+.featured--points {
+    color: #46d369;
+    margin-right: 15px;
+
+}
+
+.featured--description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+
+.featured--buttons {
+    margin-top: 15px;
+}
+.featured--watchbutton,
+.featured--mylistbutton {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px ;
+    opacity: 1;
+    transition: all ease 0.2;
+}
+
+.featured--watchbutton:hover,
+.featured--mylistbutton:hover {
+    opacity: 0.7;
+}
+
+.featured--watchbutton {
+    background-color: #fff;
+    color: #000;
+}
+
+.featured--mylistbutton {
+    background-color: #333;
+    color: #fff;
+}
+
+.featured--genres {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+@media (max-width: 760px) {
+    .featured {
+        height: 90vh;
+    }
+
+    .featured--name{
+        font-size: 40px;
+    }
+
+    .featured--info {
+        font-size: 16px;
+    }
+
+    .featured--description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .featured--watchbutton,
+    .featured--mylistbutton {
+        font-size: 16px;
+    }
+
+    .featured--genres {
+        font-size: 14px;
+    }
+}
